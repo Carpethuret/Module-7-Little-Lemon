@@ -47,6 +47,16 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
           value={date}
           onChange={handleDateChange}
           required
+          style={{
+            padding: "0.75rem",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            fontSize: "1rem",
+            backgroundColor: "#fff",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+            transition: "box-shadow 0.2s ease-in-out",
+            outline: "none"
+          }}
         />
 
         <label htmlFor="res-time">Choose time</label>
@@ -55,6 +65,16 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
           value={time}
           onChange={(e) => setTime(e.target.value)}
           required
+          style={{
+            padding: "0.75rem",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            fontSize: "1rem",
+            backgroundColor: "#fff",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+            transition: "box-shadow 0.2s ease-in-out",
+            outline: "none"
+          }}
         >
           <option value="">-- Select time --</option>
           {Array.isArray(availableTimes) && availableTimes.length > 0 ? (
@@ -75,6 +95,16 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
           value={guests}
           onChange={(e) => setGuests(Number(e.target.value))}
           required
+          style={{
+            padding: "0.75rem",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            fontSize: "1rem",
+            backgroundColor: "#fff",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+            transition: "box-shadow 0.2s ease-in-out",
+            outline: "none"
+          }}
         />
 
         <label htmlFor="occasion">Occasion</label>
@@ -83,6 +113,16 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
           value={occasion}
           onChange={(e) => setOccasion(e.target.value)}
           required
+          style={{
+            padding: "0.75rem",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            fontSize: "1rem",
+            backgroundColor: "#fff",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+            transition: "box-shadow 0.2s ease-in-out",
+            outline: "none"
+          }}
         >
           <option value="">-- Select occasion --</option>
           <option value="None">No special occasion</option>
