@@ -94,6 +94,6 @@ Ce projet de synthèse regroupe toutes les compétences développées tout au lo
 
 ```bash
 git clone https://github.com/ton-utilisateur/little-lemon.git
-cd little-lemon
+cd little-lemon-v2
 npm install
 npm start
